@@ -1,0 +1,201 @@
+[INFO ] 2023-09-22 12:24:02.317 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cpt.payments.PaymentValidationServiceApplicationTests], using SpringBootContextLoader
+[INFO ] 2023-09-22 12:24:02.326 [main] [ct-poc-service,,] AbstractContextLoader - Could not detect default resource locations for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO ] 2023-09-22 12:24:02.327 [main] [ct-poc-service,,] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: PaymentValidationServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-09-22 12:24:02.451 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cpt.payments.PaymentValidationServiceApplication for test class com.cpt.payments.PaymentValidationServiceApplicationTests
+[INFO ] 2023-09-22 12:24:02.550 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO ] 2023-09-22 12:24:02.571 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@eda25e5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7cf6a5f9, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@623e088f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@39fcbef6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66565121, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2fc6f97f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3d2ee678, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6179e425, org.springframework.test.context.event.EventPublishingTestExecutionListener@35f26e72, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2d6764b2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@67304a40, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@49c6c24f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6fe1b4fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79351f41, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1c32386d]
+[INFO ] 2023-09-22 12:24:03.141 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Starting PaymentValidationServiceApplicationTests using Java 1.8.0_202 on FRIDAY with PID 13376 (started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 12:24:03.145 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 12:24:04.589 [main] [ct-poc-service,,] GenericScope - BeanFactory id=3ff1393b-9084-37c4-95b6-1cfd7a678bfd
+[INFO ] 2023-09-22 12:24:09.106 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 12:24:09.269 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Started PaymentValidationServiceApplicationTests in 6.603 seconds (JVM running for 8.039)
+[INFO ] 2023-09-22 12:24:27.292 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 1.8.0_202 on FRIDAY with PID 13372 (D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2\target\classes started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 12:24:27.294 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 12:24:28.364 [main] [ct-poc-service,,] GenericScope - BeanFactory id=11ae9efc-c23e-3fc7-994c-753ce6ef3c0d
+[INFO ] 2023-09-22 12:24:29.176 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-22 12:24:29.190 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:24:29.192 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-22 12:24:29.193 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-22 12:24:29.343 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-22 12:24:29.344 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2008 ms
+[INFO ] 2023-09-22 12:24:31.629 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 12:24:31.717 [main] [ct-poc-service,,] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:24:31.799 [main] [ct-poc-service,,] TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 2023-09-22 12:24:32.010 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Started PaymentValidationServiceApplication in 5.296 seconds (JVM running for 6.283)
+[INFO ] 2023-09-22 12:24:32.552 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:24:32.552 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:24:32.555 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 2023-09-22 12:37:58.193 [RMI TCP Connection(25)-127.0.0.1] [ct-poc-service,,] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2023-09-22 12:37:58.335 [RMI TCP Connection(25)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:37:58.335 [RMI TCP Connection(25)-127.0.0.1] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[INFO ] 2023-09-22 12:37:58.339 [RMI TCP Connection(25)-127.0.0.1] [ct-poc-service,,] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:37:58.350 [RMI TCP Connection(25)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:38:09.957 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 1.8.0_202 on FRIDAY with PID 8072 (D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2\target\classes started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 12:38:09.960 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 12:38:11.003 [main] [ct-poc-service,,] GenericScope - BeanFactory id=11ae9efc-c23e-3fc7-994c-753ce6ef3c0d
+[INFO ] 2023-09-22 12:38:11.833 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-22 12:38:11.849 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:38:11.852 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-22 12:38:11.852 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-22 12:38:12.009 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-22 12:38:12.009 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2009 ms
+[WARN ] 2023-09-22 12:38:13.064 [main] [ct-poc-service,,] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.cpt.payments.controller.TestController] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+[INFO ] 2023-09-22 12:38:13.073 [main] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[ERROR] 2023-09-22 12:38:13.160 [main] [ct-poc-service,,] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.cpt.payments.controller.TestController] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.14.jar:2.7.14]
+	at com.cpt.payments.PaymentValidationServiceApplication.main(PaymentValidationServiceApplication.java:16) ~[classes/:?]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cpt.payments.controller.TestController] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: AddRequest
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[?:1.8.0_202]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[?:1.8.0_202]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[?:1.8.0_202]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: AddRequest
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_202]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_202]
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[?:1.8.0_202]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[?:1.8.0_202]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[?:1.8.0_202]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 18 more
+[INFO ] 2023-09-22 12:40:02.807 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cpt.payments.PaymentValidationServiceApplicationTests], using SpringBootContextLoader
+[INFO ] 2023-09-22 12:40:02.814 [main] [ct-poc-service,,] AbstractContextLoader - Could not detect default resource locations for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO ] 2023-09-22 12:40:02.815 [main] [ct-poc-service,,] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: PaymentValidationServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-09-22 12:40:02.970 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cpt.payments.PaymentValidationServiceApplication for test class com.cpt.payments.PaymentValidationServiceApplicationTests
+[INFO ] 2023-09-22 12:40:03.145 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO ] 2023-09-22 12:40:03.166 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@93cf163, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1852a3ff, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7203c7ff, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25bfcafd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4b6690c0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@46268f08, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a76840c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@71454b9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@eda25e5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7cf6a5f9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@623e088f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39fcbef6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66565121, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2fc6f97f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3d2ee678]
+[INFO ] 2023-09-22 12:40:03.700 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Starting PaymentValidationServiceApplicationTests using Java 1.8.0_202 on FRIDAY with PID 13588 (started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 12:40:03.704 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 12:40:05.050 [main] [ct-poc-service,,] GenericScope - BeanFactory id=3ff1393b-9084-37c4-95b6-1cfd7a678bfd
+[INFO ] 2023-09-22 12:40:09.415 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 12:40:09.600 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Started PaymentValidationServiceApplicationTests in 6.328 seconds (JVM running for 8.089)
+[INFO ] 2023-09-22 12:45:28.470 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 1.8.0_202 on FRIDAY with PID 9340 (D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2\target\classes started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 12:45:28.473 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 12:45:29.487 [main] [ct-poc-service,,] GenericScope - BeanFactory id=11ae9efc-c23e-3fc7-994c-753ce6ef3c0d
+[INFO ] 2023-09-22 12:45:30.203 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-22 12:45:30.231 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:45:30.233 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-22 12:45:30.233 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-22 12:45:30.369 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-22 12:45:30.370 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1855 ms
+[INFO ] 2023-09-22 12:45:32.613 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 12:45:32.697 [main] [ct-poc-service,,] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:45:32.717 [main] [ct-poc-service,,] TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 2023-09-22 12:45:32.935 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Started PaymentValidationServiceApplication in 5.051 seconds (JVM running for 6.129)
+[INFO ] 2023-09-22 12:45:33.291 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:45:33.291 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:45:33.295 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Completed initialization in 3 ms
+[WARN ] 2023-09-22 12:48:32.487 [http-nio-8081-exec-1] [ct-poc-service,008632f7ca3a1c4e,008632f7ca3a1c4e] DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'signature' for method parameter type String is not present]
+[INFO ] 2023-09-22 12:54:45.234 [RMI TCP Connection(22)-127.0.0.1] [ct-poc-service,,] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2023-09-22 12:54:45.316 [RMI TCP Connection(22)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:54:45.316 [RMI TCP Connection(22)-127.0.0.1] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[INFO ] 2023-09-22 12:54:45.317 [RMI TCP Connection(22)-127.0.0.1] [ct-poc-service,,] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:54:45.320 [RMI TCP Connection(22)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:54:45.325 [RMI TCP Connection(22)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:54:55.877 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 1.8.0_202 on FRIDAY with PID 1244 (D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2\target\classes started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 12:54:55.879 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 12:54:56.847 [main] [ct-poc-service,,] GenericScope - BeanFactory id=11ae9efc-c23e-3fc7-994c-753ce6ef3c0d
+[INFO ] 2023-09-22 12:54:57.624 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-22 12:54:57.646 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:54:57.648 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-22 12:54:57.649 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-22 12:54:57.790 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-22 12:54:57.791 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1873 ms
+[INFO ] 2023-09-22 12:54:59.979 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 12:55:00.067 [main] [ct-poc-service,,] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:55:00.084 [main] [ct-poc-service,,] TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 2023-09-22 12:55:00.315 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Started PaymentValidationServiceApplication in 4.957 seconds (JVM running for 6.021)
+[INFO ] 2023-09-22 12:55:00.773 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:55:00.774 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:55:00.778 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Completed initialization in 4 ms
+[INFO ] 2023-09-22 12:57:00.717 [RMI TCP Connection(11)-127.0.0.1] [ct-poc-service,,] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2023-09-22 12:57:00.822 [RMI TCP Connection(11)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:57:00.822 [RMI TCP Connection(11)-127.0.0.1] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[INFO ] 2023-09-22 12:57:00.824 [RMI TCP Connection(11)-127.0.0.1] [ct-poc-service,,] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:57:00.828 [RMI TCP Connection(11)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:57:19.336 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 1.8.0_202 on FRIDAY with PID 1840 (D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2\target\classes started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 12:57:19.338 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 12:57:20.347 [main] [ct-poc-service,,] GenericScope - BeanFactory id=11ae9efc-c23e-3fc7-994c-753ce6ef3c0d
+[INFO ] 2023-09-22 12:57:21.094 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-22 12:57:21.113 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:57:21.116 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-22 12:57:21.116 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-22 12:57:21.260 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-22 12:57:21.260 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1881 ms
+[INFO ] 2023-09-22 12:57:23.404 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 12:57:23.478 [main] [ct-poc-service,,] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 12:57:23.494 [main] [ct-poc-service,,] TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 2023-09-22 12:57:23.698 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Started PaymentValidationServiceApplication in 4.896 seconds (JVM running for 5.829)
+[INFO ] 2023-09-22 12:57:24.303 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:57:24.303 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-09-22 12:57:24.306 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Completed initialization in 3 ms
+[WARN ] 2023-09-22 12:57:42.140 [http-nio-8081-exec-2] [ct-poc-service,4c22b1243752f0ab,4c22b1243752f0ab] DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'signature' for method parameter type String is not present]
+[INFO ] 2023-09-22 18:11:12.603 [RMI TCP Connection(106)-127.0.0.1] [ct-poc-service,,] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2023-09-22 18:11:12.723 [RMI TCP Connection(106)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 18:11:12.723 [RMI TCP Connection(106)-127.0.0.1] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[INFO ] 2023-09-22 18:11:12.726 [RMI TCP Connection(106)-127.0.0.1] [ct-poc-service,,] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 18:11:12.733 [RMI TCP Connection(106)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 18:11:12.740 [RMI TCP Connection(106)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 18:13:25.206 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cpt.payments.PaymentValidationServiceApplicationTests], using SpringBootContextLoader
+[INFO ] 2023-09-22 18:13:25.212 [main] [ct-poc-service,,] AbstractContextLoader - Could not detect default resource locations for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO ] 2023-09-22 18:13:25.213 [main] [ct-poc-service,,] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: PaymentValidationServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-09-22 18:13:25.349 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cpt.payments.PaymentValidationServiceApplication for test class com.cpt.payments.PaymentValidationServiceApplicationTests
+[INFO ] 2023-09-22 18:13:25.463 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO ] 2023-09-22 18:13:25.492 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@93cf163, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1852a3ff, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7203c7ff, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25bfcafd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4b6690c0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@46268f08, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a76840c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@71454b9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@eda25e5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7cf6a5f9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@623e088f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39fcbef6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66565121, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2fc6f97f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3d2ee678]
+[INFO ] 2023-09-22 18:13:26.254 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Starting PaymentValidationServiceApplicationTests using Java 1.8.0_202 on FRIDAY with PID 13004 (started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 18:13:26.258 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 18:13:27.535 [main] [ct-poc-service,,] GenericScope - BeanFactory id=3ff1393b-9084-37c4-95b6-1cfd7a678bfd
+[INFO ] 2023-09-22 18:13:31.979 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 18:13:32.126 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Started PaymentValidationServiceApplicationTests in 6.517 seconds (JVM running for 8.169)
+[INFO ] 2023-09-22 18:13:46.756 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 1.8.0_202 on FRIDAY with PID 1444 (D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2\target\classes started by srika in D:\Projects\BitBucket WS\ct-poc-service\ct-poc-service-f2)
+[INFO ] 2023-09-22 18:13:46.759 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-22 18:13:47.823 [main] [ct-poc-service,,] GenericScope - BeanFactory id=11ae9efc-c23e-3fc7-994c-753ce6ef3c0d
+[INFO ] 2023-09-22 18:13:48.745 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-22 18:13:48.759 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 18:13:48.760 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-22 18:13:48.760 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-22 18:13:48.921 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-22 18:13:48.921 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2124 ms
+[INFO ] 2023-09-22 18:13:51.736 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-22 18:13:51.896 [main] [ct-poc-service,,] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 18:13:51.929 [main] [ct-poc-service,,] TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 2023-09-22 18:13:52.288 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Started PaymentValidationServiceApplication in 6.365 seconds (JVM running for 7.512)
+[INFO ] 2023-09-22 18:13:53.088 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 18:13:53.088 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-09-22 18:13:53.091 [RMI TCP Connection(9)-127.0.0.1] [ct-poc-service,,] DispatcherServlet - Completed initialization in 3 ms
+[WARN ] 2023-09-22 18:14:34.477 [http-nio-8081-exec-2] [ct-poc-service,d194e2e8dd8031b8,d194e2e8dd8031b8] DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'num1' for method parameter type int is not present]
+[INFO ] 2023-09-22 20:40:39.909 [RMI TCP Connection(130)-127.0.0.1] [ct-poc-service,,] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2023-09-22 20:40:40.026 [RMI TCP Connection(130)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 20:40:40.026 [RMI TCP Connection(130)-127.0.0.1] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[INFO ] 2023-09-22 20:40:40.031 [RMI TCP Connection(130)-127.0.0.1] [ct-poc-service,,] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-09-22 20:40:40.041 [RMI TCP Connection(130)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-22 20:40:40.047 [RMI TCP Connection(130)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]

@@ -1,0 +1,90 @@
+[INFO ] 2023-09-12 13:34:26.784 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 17.0.7 on FRIDAY with PID 13696 (D:\Projects\ct-poc-service\ct-poc-service - Copy\target\classes started by srika in D:\Projects\ct-poc-service\ct-poc-service - Copy)
+[INFO ] 2023-09-12 13:34:26.787 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-12 13:34:28.185 [main] [ct-poc-service,,] GenericScope - BeanFactory id=d2d5b4ea-cbc2-3e08-b714-a23ae1ebfbe4
+[INFO ] 2023-09-12 13:34:29.053 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-12 13:34:29.069 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-12 13:34:29.072 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-12 13:34:29.072 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-12 13:34:29.256 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-12 13:34:29.256 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2419 ms
+[WARN ] 2023-09-12 13:34:31.387 [main] [ct-poc-service,,] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.task.TaskExecutorMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.reflect.InaccessibleObjectException: Unable to make protected java.util.concurrent.RunnableScheduledFuture java.util.concurrent.ScheduledThreadPoolExecutor.decorateTask(java.lang.Runnable,java.util.concurrent.RunnableScheduledFuture) accessible: module java.base does not "opens java.util.concurrent" to unnamed module @642a7222
+[INFO ] 2023-09-12 13:34:31.398 [main] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[ERROR] 2023-09-12 13:34:31.494 [main] [ct-poc-service,,] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.task.TaskExecutorMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.reflect.InaccessibleObjectException: Unable to make protected java.util.concurrent.RunnableScheduledFuture java.util.concurrent.ScheduledThreadPoolExecutor.decorateTask(java.lang.Runnable,java.util.concurrent.RunnableScheduledFuture) accessible: module java.base does not "opens java.util.concurrent" to unnamed module @642a7222
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.14.jar:2.7.14]
+	at com.cpt.payments.PaymentValidationServiceApplication.main(PaymentValidationServiceApplication.java:16) ~[classes/:?]
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected java.util.concurrent.RunnableScheduledFuture java.util.concurrent.ScheduledThreadPoolExecutor.decorateTask(java.lang.Runnable,java.util.concurrent.RunnableScheduledFuture) accessible: module java.base does not "opens java.util.concurrent" to unnamed module @642a7222
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.util.ReflectionUtils.makeAccessible(ReflectionUtils.java:569) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.cloud.sleuth.instrument.async.LazyTraceScheduledThreadPoolExecutor.makeAccessibleIfNotNull(LazyTraceScheduledThreadPoolExecutor.java:120) ~[spring-cloud-sleuth-core-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.instrument.async.LazyTraceScheduledThreadPoolExecutor.<init>(LazyTraceScheduledThreadPoolExecutor.java:204) ~[spring-cloud-sleuth-core-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.instrument.async.LazyTraceThreadPoolTaskScheduler.getScheduledThreadPoolExecutor(LazyTraceThreadPoolTaskScheduler.java:166) ~[spring-cloud-sleuth-core-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.cloud.sleuth.instrument.async.ExecutorMethodInterceptor.invoke(ExecutorBeanPostProcessor.java:351) ~[spring-cloud-sleuth-core-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler$$EnhancerBySpringCGLIB$$4eb47afc.getScheduledThreadPoolExecutor(<generated>) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.actuate.autoconfigure.metrics.task.TaskExecutorMetricsAutoConfiguration.safeGetThreadPoolExecutor(TaskExecutorMetricsAutoConfiguration.java:83) ~[spring-boot-actuator-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.boot.actuate.autoconfigure.metrics.task.TaskExecutorMetricsAutoConfiguration.lambda$bindTaskExecutorsToRegistry$0(TaskExecutorMetricsAutoConfiguration.java:61) ~[spring-boot-actuator-autoconfigure-2.7.14.jar:2.7.14]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[?:?]
+	at org.springframework.boot.actuate.autoconfigure.metrics.task.TaskExecutorMetricsAutoConfiguration.bindTaskExecutorsToRegistry(TaskExecutorMetricsAutoConfiguration.java:56) ~[spring-boot-actuator-autoconfigure-2.7.14.jar:2.7.14]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:732) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 17 more
+[INFO ] 2023-09-12 14:48:36.532 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Starting PaymentValidationServiceApplication using Java 1.8.0_43 on FRIDAY with PID 15500 (D:\Projects\ct-poc-service\ct-poc-service - Copy\target\classes started by srika in D:\Projects\ct-poc-service\ct-poc-service - Copy)
+[INFO ] 2023-09-12 14:48:36.535 [main] [ct-poc-service,,] PaymentValidationServiceApplication - The following 1 profile is active: "local"
+[INFO ] 2023-09-12 14:48:38.070 [main] [ct-poc-service,,] GenericScope - BeanFactory id=d2d5b4ea-cbc2-3e08-b714-a23ae1ebfbe4
+[INFO ] 2023-09-12 14:48:38.946 [main] [ct-poc-service,,] TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 2023-09-12 14:48:38.967 [main] [ct-poc-service,,] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-12 14:48:38.969 [main] [ct-poc-service,,] StandardService - Starting service [Tomcat]
+[INFO ] 2023-09-12 14:48:38.969 [main] [ct-poc-service,,] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[INFO ] 2023-09-12 14:48:39.132 [main] [ct-poc-service,,] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-09-12 14:48:39.132 [main] [ct-poc-service,,] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2542 ms
+[INFO ] 2023-09-12 14:48:42.069 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-12 14:48:42.201 [main] [ct-poc-service,,] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-12 14:48:42.227 [main] [ct-poc-service,,] TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 2023-09-12 14:48:42.605 [main] [ct-poc-service,,] PaymentValidationServiceApplication - Started PaymentValidationServiceApplication in 6.697 seconds (JVM running for 7.797)
+[INFO ] 2023-09-12 16:42:05.924 [RMI TCP Connection(110)-127.0.0.1] [ct-poc-service,,] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2023-09-12 16:42:06.071 [RMI TCP Connection(110)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-12 16:42:06.071 [RMI TCP Connection(110)-127.0.0.1] [ct-poc-service,,] StandardService - Stopping service [Tomcat]
+[INFO ] 2023-09-12 16:42:06.086 [RMI TCP Connection(110)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-12 16:42:06.091 [RMI TCP Connection(110)-127.0.0.1] [ct-poc-service,,] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+[INFO ] 2023-09-12 20:29:36.665 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cpt.payments.PaymentValidationServiceApplicationTests], using SpringBootContextLoader
+[INFO ] 2023-09-12 20:29:36.676 [main] [ct-poc-service,,] AbstractContextLoader - Could not detect default resource locations for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO ] 2023-09-12 20:29:36.678 [main] [ct-poc-service,,] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cpt.payments.PaymentValidationServiceApplicationTests]: PaymentValidationServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-09-12 20:29:36.863 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cpt.payments.PaymentValidationServiceApplication for test class com.cpt.payments.PaymentValidationServiceApplicationTests
+[INFO ] 2023-09-12 20:29:37.031 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO ] 2023-09-12 20:29:37.059 [main] [ct-poc-service,,] SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e1ce85, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c5de8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1091312, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fdec9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1abad67, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10a1967, org.springframework.test.context.transaction.TransactionalTestExecutionListener@640157, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@851b44, org.springframework.test.context.event.EventPublishingTestExecutionListener@4f54e6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@18bafa9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@16f63f6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1ca0d64, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@180945f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1f684e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1aa363a]
+[INFO ] 2023-09-12 20:29:37.653 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Starting PaymentValidationServiceApplicationTests using Java 1.8.0_43 on FRIDAY with PID 8268 (started by srika in D:\Projects\ct-poc-service\ct-poc-service - Copy)
+[INFO ] 2023-09-12 20:29:37.656 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - The following 1 profile is active: "local"
+[INFO ] 2023-09-12 20:29:39.064 [main] [ct-poc-service,,] GenericScope - BeanFactory id=f1aa2a9c-dc6c-3ad5-ab13-ad0286cdc0fb
+[INFO ] 2023-09-12 20:29:43.943 [main] [ct-poc-service,,] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-09-12 20:29:44.205 [main] [ct-poc-service,,] PaymentValidationServiceApplicationTests - Started PaymentValidationServiceApplicationTests in 7.08 seconds (JVM running for 8.947)
